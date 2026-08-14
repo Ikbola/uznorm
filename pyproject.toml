@@ -3,7 +3,10 @@ name = "uznorm"
 version = "0.1.0"
 description = "Normalize Uzbek text — apostrophes, transliteration, whitespace"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+]
 
 [build-system]
 requires = ["hatchling"]
