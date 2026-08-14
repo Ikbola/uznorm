@@ -2,8 +2,8 @@ from uznorm import normalize_apostrophes
 
 # Declared here with explicit escapes, not imported from normalize.py —
 # a test that imports the value it's checking can't catch a wrong value.
-OQ_GQ = "\u02bb"   # ʻ
-TUTUQ = "\u02bc"   # ʼ
+OQ_GQ = "\u02bb"  # ʻ
+TUTUQ = "\u02bc"  # ʼ
 
 
 def test_o_takes_oq_gq():

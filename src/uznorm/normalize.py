@@ -3,8 +3,8 @@
 # Everything people actually type instead of the correct characters
 APOSTROPHE_VARIANTS = "'\u2019\u0060\u00b4\u02bb\u02bc"
 
-OQ_GQ = "\u02bb"      # ʻ  — used in oʻ and gʻ
-TUTUQ = "\u02bc"      # ʼ  — standalone glottal marker
+OQ_GQ = "\u02bb"  # ʻ  — used in oʻ and gʻ
+TUTUQ = "\u02bc"  # ʼ  — standalone glottal marker
 
 
 def normalize_apostrophes(text: str) -> str:
@@ -20,4 +20,3 @@ def normalize_apostrophes(text: str) -> str:
         else:
             result.append(char)
     return "".join(result)
-
