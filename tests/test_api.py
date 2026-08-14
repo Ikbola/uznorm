@@ -30,3 +30,9 @@ def test_unchanged_text_reports_no_change():
 def test_missing_text_field_is_rejected():
     response = client.post("/normalize", json={})
     assert response.status_code == 422
+
+
+def test_root_returns_service_info():
+    response = client.get("/")
+    assert response.status_code == 200
+    assert response.json()["service"] == "uznorm"

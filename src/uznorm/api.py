@@ -22,6 +22,17 @@ class NormalizeResponse(BaseModel):
     changed: bool
 
 
+@app.get("/")
+def root():
+    """Landing endpoint — points visitors at the docs."""
+    return {
+        "service": "uznorm",
+        "description": "Normalization utilities for Uzbek text",
+        "docs": "/docs",
+        "endpoints": ["/health", "/normalize"],
+    }
+
+
 @app.get("/health")
 def health():
     """Liveness check — deployment platforms poll this."""
