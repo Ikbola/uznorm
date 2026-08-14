@@ -1,4 +1,4 @@
-from normalize import normalize_apostrophes
+from uznorm import normalize_apostrophes
 
 # Declared here with explicit escapes, not imported from normalize.py —
 # a test that imports the value it's checking can't catch a wrong value.

@@ -21,8 +21,3 @@ def normalize_apostrophes(text: str) -> str:
             result.append(char)
     return "".join(result)
 
-
-if __name__ == "__main__":
-    samples = ["O'zbekiston", "g`alaba", "ma'no", "san'at"]
-    for sample in samples:
-        print(f"{sample}  ->  {normalize_apostrophes(sample)}")
