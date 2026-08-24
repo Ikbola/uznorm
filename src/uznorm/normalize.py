@@ -1,7 +1,7 @@
 """Normalize apostrophe variants in Uzbek Latin text."""
 
 # Everything people actually type instead of the correct characters
-APOSTROPHE_VARIANTS = "'\u2019\u0060\u00b4\u02bb\u02bc"
+APOSTROPHE_VARIANTS = "'\u2018\u2019\u0060\u00b4\u02bb\u02bc"
 
 OQ_GQ = "\u02bb"  # ʻ  — used in oʻ and gʻ
 TUTUQ = "\u02bc"  # ʼ  — standalone glottal marker

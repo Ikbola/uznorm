@@ -41,3 +41,6 @@ def test_text_without_apostrophes_unchanged():
 
 def test_empty_string():
     assert normalize_apostrophes("") == ""
+
+def test_left_single_quote_before_o_and_g():
+    assert normalize_apostrophes("O\u2018zbekiston Farg\u2018ona") == "O\u02bbzbekiston Farg\u02bbona"
